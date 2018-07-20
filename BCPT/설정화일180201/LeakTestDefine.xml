@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<LeakTestDefine xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <_LastWriteDate>0001-01-01T00:00:00</_LastWriteDate>
+  <HighAirMaster>0</HighAirMaster>
+  <LowAirCosmoCh>0</LowAirCosmoCh>
+  <LowAirMaster>0</LowAirMaster>
+  <VacuumAirCosmoCh>0</VacuumAirCosmoCh>
+  <VacuumAirMaster>0</VacuumAirMaster>
+  <HighAir_PressTime>0</HighAir_PressTime>
+  <HighAir_CheckTime>0</HighAir_CheckTime>
+  <HighAir_DiffBar>0</HighAir_DiffBar>
+  <LowAir_PressTime>0</LowAir_PressTime>
+  <LowAir_CheckTime>0</LowAir_CheckTime>
+  <LowAir_DiffBar>0</LowAir_DiffBar>
+  <Vacuum_PressTime>0</Vacuum_PressTime>
+  <Vacuum_CheckTime>0</Vacuum_CheckTime>
+  <Vacuum_DiffBar>0</Vacuum_DiffBar>
+  <AirSensor_PressTime>0</AirSensor_PressTime>
+  <AirSensor_CheckTime>0</AirSensor_CheckTime>
+  <AirSensor_DiffBar>0</AirSensor_DiffBar>
+  <VacuumSensor_PressTime>0</VacuumSensor_PressTime>
+  <VacuumSensor_CheckTime>0</VacuumSensor_CheckTime>
+  <VacuumSensor_DiffBar>0</VacuumSensor_DiffBar>
+</LeakTestDefine>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<SYSTEM_CONFIG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AI_CH0_Factor>1</AI_CH0_Factor>
+  <AI_CH0_Offset>0</AI_CH0_Offset>
+  <AI_CH1_Factor>1</AI_CH1_Factor>
+  <AI_CH1_Offset>0</AI_CH1_Offset>
+  <AI_CH2_Factor>1</AI_CH2_Factor>
+  <AI_CH2_Offset>0</AI_CH2_Offset>
+  <AI_CH3_Factor>1</AI_CH3_Factor>
+  <AI_CH3_Offset>0</AI_CH3_Offset>
+  <AI_CH4_Factor>0</AI_CH4_Factor>
+  <AI_CH4_Offset>0</AI_CH4_Offset>
+  <AI_CH5_Factor>0</AI_CH5_Factor>
+  <AI_CH5_Offset>0</AI_CH5_Offset>
+  <COSMO_PortNumber1>1</COSMO_PortNumber1>
+  <COSMO_PortNumber2>0</COSMO_PortNumber2>
+  <UI_RefreshTimerValue>20</UI_RefreshTimerValue>
+  <MC_LoopTimerValue>50</MC_LoopTimerValue>
+  <MES_SERVERIP>10.1.1.1</MES_SERVERIP>
+  <MES_SERVERPORT>8000</MES_SERVERPORT>
+  <LDS_SERVERIP>10.1.1.3</LDS_SERVERIP>
+  <LDS_SERVERPORT>8001</LDS_SERVERPORT>
+  <UDP_SERVERIP>10.1.1.255</UDP_SERVERIP>
+  <UDP_SERVERPORT>2011</UDP_SERVERPORT>
+  <PistonMoving_FWDFindPosition>0.4</PistonMoving_FWDFindPosition>
+  <PistonMoving_BWDFindPosition>0.4</PistonMoving_BWDFindPosition>
+  <PistonMoving_FWDMaxForce>3000</PistonMoving_FWDMaxForce>
+  <PistonMoving_FullStrokeFindForce>1900</PistonMoving_FullStrokeFindForce>
+  <PistonStroke_FullStrokeFindBar>3.5</PistonStroke_FullStrokeFindBar>
+  <PistonStroke_VacPriPosition>8</PistonStroke_VacPriPosition>
+  <PistonStroke_VacSecPosition>30</PistonStroke_VacSecPosition>
+  <VacuumHold_CheckStart>4.5</VacuumHold_CheckStart>
+  <VacuumHold_CheckEnd>5</VacuumHold_CheckEnd>
+</SYSTEM_CONFIG>

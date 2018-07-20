@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<ConfigData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <IoMap>
+    <PlcTcpip>192.168.0.10</PlcTcpip>
+    <LowPassFilterHz>60</LowPassFilterHz>
+    <LowPassFilterSampleRate>1000</LowPassFilterSampleRate>
+    <MasterSampleRate>6000</MasterSampleRate>
+    <MasterSampleCount>600</MasterSampleCount>
+    <AirLeakTestSpec15Pri>
+      <TestNo>1</TestNo>
+      <TestName>1.5bar 리크 테스트(PRI)</TestName>
+      <TestValue>0</TestValue>
+      <OKLowLimit>0</OKLowLimit>
+      <OKHighLimit>100</OKHighLimit>
+      <MeasurementValue>0</MeasurementValue>
+      <Result>NONE</Result>
+      <TestUnit>mbar</TestUnit>
+      <Note />
+    </AirLeakTestSpec15Pri>
+    <AirLeakTestSpec15Flo>
+      <TestNo>2</TestNo>
+      <TestName>1.5bar 리크 테스트(FLO)</TestName>
+      <TestValue>0</TestValue>
+      <OKLowLimit>0</OKLowLimit>
+      <OKHighLimit>100</OKHighLimit>
+      <MeasurementValue>0</MeasurementValue>
+      <Result>NONE</Result>
+      <TestUnit>mbar</TestUnit>
+      <Note />
+    </AirLeakTestSpec15Flo>
+    <AirLeakTestSpec50Pri>
+      <TestNo>3</TestNo>
+      <TestName>5.0bar 리크 테스트(PRI)</TestName>
+      <TestValue>0</TestValue>
+      <OKLowLimit>0</OKLowLimit>
+      <OKHighLimit>100</OKHighLimit>
+      <MeasurementValue>0</MeasurementValue>
+      <Result>NONE</Result>
+      <TestUnit>mbar</TestUnit>
+      <Note />
+    </AirLeakTestSpec50Pri>
+    <AirLeakTestSpec50Flo>
+      <TestNo>4</TestNo>
+      <TestName>5.0bar 리크 테스트(FLO)</TestName>
+      <TestValue>0</TestValue>
+      <OKLowLimit>0</OKLowLimit>
+      <OKHighLimit>100</OKHighLimit>
+      <MeasurementValue>0</MeasurementValue>
+      <Result>NONE</Result>
+      <TestUnit>mbar</TestUnit>
+      <Note />
+    </AirLeakTestSpec50Flo>
+    <PistonMovingFWDTest>
+      <TestNo>5</TestNo>
+      <TestName>피스톤 무빙 테스트(전진)</TestName>
+      <TestValue>0</TestValue>
+      <OKLowLimit>0.3</OKLowLimit>
+      <OKHighLimit>100</OKHighLimit>
+      <MeasurementValue>0</MeasurementValue>
+      <Result>NONE</Result>
+      <TestUnit>N</TestUnit>
+      <Note />
+    </PistonMovingFWDTest>
+    <PistonMovingBWDTest>
+      <TestNo>6</TestNo>
+      <TestName>피스톤 무빙 테스트(후진)</TestName>
+      <TestValue>0</TestValue>
+      <OKLowLimit>0.3</OKLowLimit>
+      <OKHighLimit>10</OKHighLimit>
+      <MeasurementValue>0</MeasurementValue>
+      <Result>NONE</Result>
+      <TestUnit>N</TestUnit>
+      <Note />
+    </PistonMovingBWDTest>
+    <LostTravelTest>
+      <TestNo>7</TestNo>
+      <TestName>로스트 트레블 테스트</TestName>
+      <TestValue>0</TestValue>
+      <OKLowLimit>0</OKLowLimit>
+      <OKHighLimit>1.5</OKHighLimit>
+      <MeasurementValue>0</MeasurementValue>
+      <Result>NONE</Result>
+      <TestUnit>mm</TestUnit>
+      <Note />
+    </LostTravelTest>
+    <PistonStrokeTest>
+      <TestNo>8</TestNo>
+      <TestName>피스톤 스트로크 테스트</TestName>
+      <TestValue>0</TestValue>
+      <OKLowLimit>0</OKLowLimit>
+      <OKHighLimit>10</OKHighLimit>
+      <MeasurementValue>0</MeasurementValue>
+      <Result>NONE</Result>
+      <TestUnit>mm</TestUnit>
+      <Note />
+    </PistonStrokeTest>
+    <VacuumTestPri>
+      <TestNo>9</TestNo>
+      <TestName>진공 테스트(PRI)</TestName>
+      <TestValue>38</TestValue>
+      <OKLowLimit>0</OKLowLimit>
+      <OKHighLimit>380</OKHighLimit>
+      <MeasurementValue>0</MeasurementValue>
+      <Result>NONE</Result>
+      <TestUnit>mmHg</TestUnit>
+      <Note />
+    </VacuumTestPri>
+    <VacuumTestFlo>
+      <TestNo>10</TestNo>
+      <TestName>진공 테스트(FLO)</TestName>
+      <TestValue>38</TestValue>
+      <OKLowLimit>0</OKLowLimit>
+      <OKHighLimit>380</OKHighLimit>
+      <MeasurementValue>0</MeasurementValue>
+      <Result>NONE</Result>
+      <TestUnit>mmHg</TestUnit>
+      <Note />
+    </VacuumTestFlo>
+    <PistonMovingSpec>
+      <CheckForwardForce>5000</CheckForwardForce>
+      <CheckForwardRange1>0.5</CheckForwardRange1>
+      <CheckForwardRange2>1</CheckForwardRange2>
+      <CheckForwardValueMin>0</CheckForwardValueMin>
+      <CheckForwardValueMax>100</CheckForwardValueMax>
+      <CheckForwardMaxLimit>50</CheckForwardMaxLimit>
+      <CheckBackwardRange1>0</CheckBackwardRange1>
+      <CheckBackwardRange2>1</CheckBackwardRange2>
+      <CheckBackwardValueMin>0</CheckBackwardValueMin>
+      <CheckBackwardValueMax>10</CheckBackwardValueMax>
+    </PistonMovingSpec>
+    <LostTravelSpec>
+      <CheckForwardForce>0</CheckForwardForce>
+      <CheckForwardRange1>0</CheckForwardRange1>
+      <CheckForwardRange2>0</CheckForwardRange2>
+      <CheckForwardValueMin>0</CheckForwardValueMin>
+      <CheckForwardValueMax>0</CheckForwardValueMax>
+      <CheckForwardMaxLimit>0</CheckForwardMaxLimit>
+      <CheckBackwardRange1>0</CheckBackwardRange1>
+      <CheckBackwardRange2>0</CheckBackwardRange2>
+      <CheckBackwardValueMin>0</CheckBackwardValueMin>
+      <CheckBackwardValueMax>0</CheckBackwardValueMax>
+    </LostTravelSpec>
+    <PistonStrokeSpec>
+      <CheckForwardForce>0</CheckForwardForce>
+      <CheckForwardRange1>0</CheckForwardRange1>
+      <CheckForwardRange2>0</CheckForwardRange2>
+      <CheckForwardValueMin>0</CheckForwardValueMin>
+      <CheckForwardValueMax>0</CheckForwardValueMax>
+      <CheckForwardMaxLimit>0</CheckForwardMaxLimit>
+      <CheckBackwardRange1>0</CheckBackwardRange1>
+      <CheckBackwardRange2>0</CheckBackwardRange2>
+      <CheckBackwardValueMin>0</CheckBackwardValueMin>
+      <CheckBackwardValueMax>0</CheckBackwardValueMax>
+    </PistonStrokeSpec>
+    <VacuumSpec>
+      <CheckForwardForce>0</CheckForwardForce>
+      <CheckForwardRange1>0</CheckForwardRange1>
+      <CheckForwardRange2>0</CheckForwardRange2>
+      <CheckForwardValueMin>0</CheckForwardValueMin>
+      <CheckForwardValueMax>0</CheckForwardValueMax>
+      <CheckForwardMaxLimit>0</CheckForwardMaxLimit>
+      <CheckBackwardRange1>0</CheckBackwardRange1>
+      <CheckBackwardRange2>0</CheckBackwardRange2>
+      <CheckBackwardValueMin>0</CheckBackwardValueMin>
+      <CheckBackwardValueMax>0</CheckBackwardValueMax>
+    </VacuumSpec>
+  </IoMap>
+</ConfigData>

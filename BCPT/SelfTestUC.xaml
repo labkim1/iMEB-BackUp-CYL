@@ -1,0 +1,190 @@
+﻿<UserControl x:Class="BCPT.SelfTestUC"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"              
+             mc:Ignorable="d" 
+             d:DesignHeight="833" d:DesignWidth="1053">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="150" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="400"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="32"/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Column="0" Grid.Row="0" x:Name="DurationDisplay" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"></TextBox>
+        <TextBox Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="0" x:Name="StepMessage" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"></TextBox>
+        <!--
+        <Button Grid.Column="1" Grid.Row="0" x:Name="SelfTestSignalSet" Click="SelfTestSignalSet_Click">Self Test Signal Set</Button>
+        <Button Grid.Column="2" Grid.Row="0" x:Name="SelfTestSignalEnd" Click="SelfTestSignalEnd_Click">Self Test Signal End Set</Button>
+        <Button Grid.Column="3" Grid.Row="0" x:Name="Test1" Click="Test1_Click" >Test 1()</Button>
+        -->
+        <Grid Grid.Column="0" Grid.Row="1">
+            <!-- <StackPanel Orientation="Vertical">
+                <Button x:Name="OutletSolOn" Click="OutletSolOn_Click">Outlet ON</Button>
+                <Button x:Name="OutletSolOff" Click="OutletSolOff_Click">Outlet OFF</Button>
+                <Button x:Name="VacuumSolOn" Click="VacuumSolOn_Click">Vacuum ON</Button>
+                <Button x:Name="VacuumSolOff" Click="VacuumSolOff_Click">Vacuum OFF</Button>
+                <Button x:Name="ProtectSolOn" Click="ProtectSolOn_Click">Protect ON</Button>
+                <Button x:Name="ProtectSolOff" Click="ProtectSolOff_Click">Protect OFF</Button>
+                <Button x:Name="AirSensorSolOn" Click="AirSensorSolOn_Click">AirSensor ON</Button>
+                <Button x:Name="AirSensorSolOff" Click="AirSensorSolOff_Click">AirSensorOFF</Button>
+                <Button x:Name="HighSolOn" Click="HighSolOn_Click">20Bar ON</Button>
+                <Button x:Name="HighSolOff" Click="HighSolOff_Click">20Bar OFF</Button>                
+            </StackPanel> -->
+        </Grid>
+        <Grid Grid.Column="1" Grid.ColumnSpan="6" Grid.Row="1">
+            <Canvas >
+
+                <Label x:Name="lbl_FLO_Cosmo" Canvas.Left="611" Canvas.Top="80">COSMO(FLO)</Label>
+                <Label x:Name="lbl_FLO_LowSupply" Canvas.Left="622" Canvas.Top="9">저압(공급)</Label>
+                <Label x:Name="lbl_FLO_HighSupply" Canvas.Left="800" Canvas.Top="9">고압(공급)</Label>
+                <Label x:Name="lbl_FLO_Outlet" Canvas.Left="615" Canvas.Top="150">OUTLET SOL</Label>
+                <Label x:Name="lbl_FLO_Vacuum" Canvas.Left="695" Canvas.Top="206">VACUUM SOL</Label>
+                <Label x:Name="lbl_FLO_Protect" Canvas.Left="611" Canvas.Top="260">PROTECT SOL</Label>
+                <Label x:Name="lbl_FLO_AirSensor" Canvas.Left="695" Canvas.Top="294">AIR SENSOR SOL</Label>
+                <Label x:Name="lbl_FLO_High" Canvas.Left="793" Canvas.Top="80">20 BAR SOL</Label>
+                <Label x:Name="lbl_FLO_Test" Canvas.Left="490" Canvas.Top="354">SUP.FLO</Label>
+                <Image Source="pack://siteoforigin:,,,/Resources/Graph_Zoom In-16.png" Canvas.Left="732" Canvas.Top="281" ></Image>
+                <Image Source="pack://siteoforigin:,,,/Resources/Graph_Zoom In-16.png" Canvas.Left="732" Canvas.Top="185" ></Image>
+                <Border x:Name="line_FLO_LowToCosmo" Width="3" Height="40" Canvas.Left="650" Canvas.Top="35" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_FLO_CosmoToOutlet" Width="3" Height="40" Canvas.Left="650" Canvas.Top="105" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_FLO_OutletToProtect" Width="3" Height="80" Canvas.Left="650" Canvas.Top="175" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_FLO_OutletToVacuum" Width="40" Height="3" Canvas.Left="650" Canvas.Top="215" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_FLO_ProtectToTest" Width="3" Height="80" Canvas.Left="650" Canvas.Top="285" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_FLO_ProtectToAirSensor" Width="40" Height="3" Canvas.Left="650" Canvas.Top="305" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_FLO_20BarToTest" Width="283" Height="3" Canvas.Left="550" Canvas.Top="365" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_FLO_HighTo20Bar" Width="3" Height="40" Canvas.Left="830" Canvas.Top="35" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_FLO_20BarToTest2" Width="3" Height="260" Canvas.Left="830" Canvas.Top="105" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+
+
+                <Label x:Name="lbl_PRI_Cosmo" Canvas.Left="238" Canvas.Top="80">COSMO(PRI)</Label>
+                <Label x:Name="lbl_PRI_LowSupply" Canvas.Left="244" Canvas.Top="9">저압(공급)</Label>
+                <Label x:Name="lbl_PRI_HighSupply" Canvas.Left="47" Canvas.Top="9">고압(공급)</Label>
+                <Label x:Name="lbl_PRI_Outlet" Canvas.Left="240" Canvas.Top="150">OUTLET SOL</Label>
+                <Label x:Name="lbl_PRI_Vacuum" Canvas.Left="147" Canvas.Top="205">VACUUM SOL</Label>
+                <Label x:Name="lbl_PRI_Protect" Canvas.Left="238" Canvas.Top="260">PROTECT SOL</Label>
+                <Label x:Name="lbl_PRI_AirSensor" Canvas.Left="134" Canvas.Top="294">AIR SENSOR SOL</Label>
+                <Label x:Name="lbl_PRI_High" Canvas.Left="44" Canvas.Top="80">20 BAR SOL</Label>
+                <Label x:Name="lbl_PRI_Test" Canvas.Left="372" Canvas.Top="354">SUP.PRI</Label>
+                <Image Source="pack://siteoforigin:,,,/Resources/Graph_Zoom In-16.png" Canvas.Left="179" Canvas.Top="281" ></Image>
+                <Image Source="pack://siteoforigin:,,,/Resources/Graph_Zoom In-16.png" Canvas.Left="187" Canvas.Top="184" ></Image>
+                <Border x:Name="line_PRI_LowToCosmo" Width="3" Height="40" Canvas.Left="274" Canvas.Top="35" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_PRI_CosmoToOutlet" Width="3" Height="40" Canvas.Left="274" Canvas.Top="105" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_PRI_OutletToProtect" Width="3" Height="80" Canvas.Left="274" Canvas.Top="175" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_PRI_OutletToVacuum" Width="40" Height="3" Canvas.Left="234" Canvas.Top="215" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_PRI_ProtectToTest" Width="3" Height="80" Canvas.Left="274" Canvas.Top="285" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_PRI_ProtectToAirSensor" Width="40" Height="3" Canvas.Left="232" Canvas.Top="305" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_PRI_20BarToTest" Width="283" Height="3" Canvas.Left="80" Canvas.Top="365" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_PRI_HighTo20Bar" Width="3" Height="40" Canvas.Left="76" Canvas.Top="35" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+                <Border x:Name="line_PRI_20BarToTest2" Width="3" Height="260" Canvas.Left="77" Canvas.Top="105" Background="Blue">
+                    <Border.Effect>
+                        <DropShadowEffect/>
+                    </Border.Effect>
+                </Border>
+
+
+            </Canvas>
+        </Grid>
+        <DataGrid Grid.Column="1" Grid.ColumnSpan="6" Grid.Row="2" x:Name="LeakTestGridDisplay"
+                      Padding="10"
+					  AutoGenerateColumns="False"
+                      AlternationCount="0"
+                      SelectionMode="Single"                  
+                      
+                      RenderOptions.ClearTypeHint="Enabled"
+					  TextOptions.TextFormattingMode="Display"
+                      >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="테스트명" Width="200" IsReadOnly="True" Binding="{Binding Path=TestName}"/>
+                <DataGridTextColumn Header="설 명" Width="350" IsReadOnly="True" Binding="{Binding Path=Description}"/>
+                <DataGridTextColumn Header="기 준" Width="60" IsReadOnly="True" Binding="{Binding Path=StandardValue,StringFormat={}{0:N3}}"/>
+                <DataGridTextColumn Header="실가압" Width="60" IsReadOnly="True" Binding="{Binding Path=MeasurementValue,StringFormat={}{0:N3}}"/>
+                <DataGridTextColumn Header="차 압" Width="60" IsReadOnly="True" Binding="{Binding Path=LeakValue,StringFormat={}{0:N3}}"/>
+                <DataGridTextColumn Header="리크기준" Width="60" IsReadOnly="True" Binding="{Binding Path=LeakLimit,StringFormat={}{0:N3}}"/>
+                <DataGridTextColumn Header="합부" Width="60" IsReadOnly="True" Binding="{Binding Path=Result,StringFormat={}{0:N}}">
+
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>

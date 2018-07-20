@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<TestSpecification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LTP_CutOffHole_Min>0</LTP_CutOffHole_Min>
+  <LTP_CutOffHole_Max>0</LTP_CutOffHole_Max>
+  <LTP_FLOPressure_Low>0</LTP_FLOPressure_Low>
+  <LTP_MaxStroke>0</LTP_MaxStroke>
+  <LTP_CutOffHole_Min1>0</LTP_CutOffHole_Min1>
+  <LTP_CutOffHole_Max1>0</LTP_CutOffHole_Max1>
+  <LTP_FLOPressure_Low1>0</LTP_FLOPressure_Low1>
+</TestSpecification>
